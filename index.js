@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: false})); // per potere decodificare cose
 //routes
 app.use("/api/products", productRoute)
 
-mongoose.connect("mongodb+srv://admin:a8g7AJqou2gpOgcn@testcrud.a2dczsx.mongodb.net/Node-API?retryWrites=true&w=majority&appName=testCRUD")
+mongoose.connect("") // connect to mongoDB
     .then(() => {
         console.log('MongoDB Connected!');
         app.listen(
